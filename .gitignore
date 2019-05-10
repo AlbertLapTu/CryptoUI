@@ -1,0 +1,5 @@
+#Files
+.DS_STORE
+
+# Folders
+node_modules
