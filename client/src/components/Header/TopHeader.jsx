@@ -25,7 +25,6 @@ const Input = styled.input.attrs({
   border-radius: 15px;
   background-color: #f8f9fb;
   display: block;
-  margin: 0 0 1em;
 `;
 
 const ImageTile = styled.div`
