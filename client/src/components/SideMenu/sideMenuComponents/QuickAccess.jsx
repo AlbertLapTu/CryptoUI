@@ -5,12 +5,12 @@ import exchange from '../../../../../Assets/exchange.svg';
 import wallet from '../../../../../Assets/Icons/Wallet/outline.png';
 import tradeView from '../../../../../Assets/Icons/TradeView/Outline.png';
 
-const quickAccessContainer = styled.div`
-  display: flex;
-  justify-content: center;
+//TODO: Fix container style
+const QuickAccessContainer = styled.div`
+  display: inline-block;
 `;
 
-const quickAccessTitleStyle = styled.div`
+const QuickAccessTitleStyle = styled.div`
   width: 100%;
   margin: 0 auto;
   font-size: 20px;
@@ -24,8 +24,8 @@ const IconStyles = styled.img`
 const QuickAccess = () => {
   return (
     <React.Fragment>
-      <quickAccessTitleStyle>Quick Access</quickAccessTitleStyle>
-      <quickAccessContainer>
+      <QuickAccessTitleStyle>Quick Access</QuickAccessTitleStyle>
+      <QuickAccessContainer>
         <div>
           <IconStyles src={homeIcon} />
           Dashboard
@@ -42,7 +42,7 @@ const QuickAccess = () => {
           <IconStyles src={tradeView} />
           Trade View
         </div>
-      </quickAccessContainer>
+      </QuickAccessContainer>
     </React.Fragment>
   );
 };
