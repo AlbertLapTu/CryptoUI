@@ -6,6 +6,9 @@ const SideMenuStyle = styled.div`
   height: 1024px;
   font-family: Oxygen;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5vh;
 `;
 
 export default SideMenuStyle;

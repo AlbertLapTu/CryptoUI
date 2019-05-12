@@ -9,12 +9,12 @@ const LogoImage = styled.img`
 
 const LogoName = styled.div`
   font-size: 20px;
-  font-weight: 300;
+  font-weight: bold;
+  font-style: normal;
   color: #fff;
-  letter-spacing: 2px;
+  letter-spacing: normal;
 `;
 
-//TODO: Vertical align the container
 const LogoContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
@@ -32,7 +32,7 @@ const Logo = () => {
     <React.Fragment>
       <LogoContainer>
         <LogoImage src={c} />
-        <LogoName>CoinUI</LogoName>
+        <LogoName>CRYPTO UI</LogoName>
       </LogoContainer>
       <Line />
     </React.Fragment>

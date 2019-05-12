@@ -4,44 +4,58 @@ import homeIcon from '../../../../../Assets/fill.svg';
 import exchange from '../../../../../Assets/exchange.svg';
 import wallet from '../../../../../Assets/Icons/Wallet/outline.png';
 import tradeView from '../../../../../Assets/Icons/TradeView/Outline.png';
+import rightArrow from '../../../../../Assets/Icons/Arrows/Right.png';
 
-//TODO: Fix container style
-const QuickAccessContainer = styled.div`
-  display: inline-block;
+const QuickAccessContainer = styled.ul`
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: flex-start;
+  padding-left: 23px;
 `;
 
-const QuickAccessTitleStyle = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  font-size: 20px;
+const ListItemStyle = styled.li`
+  list-style: none;
+  padding-top: 5px;
+`;
+
+const QuickAccessTitleStyle = styled.span`
+  display: flex;
+  align-items: center;
+  flex-direction: flex-start;
+  padding: 6px 21px 13px 23px;
 `;
 
 const IconStyles = styled.img`
   height: 20px;
   width: 20px;
+  padding-right: 8px;
 `;
 
+//TODO: Fix arrow for trade view
+//      Container doesn't work.
 const QuickAccess = () => {
   return (
     <React.Fragment>
       <QuickAccessTitleStyle>Quick Access</QuickAccessTitleStyle>
       <QuickAccessContainer>
-        <div>
+        <ListItemStyle>
           <IconStyles src={homeIcon} />
-          Dashboard
-        </div>
-        <div>
+          <span>Dashboard</span>
+        </ListItemStyle>
+        <ListItemStyle>
           <IconStyles src={exchange} />
-          Exchange
-        </div>
-        <div>
+          <span>Exchange</span>
+        </ListItemStyle>
+        <ListItemStyle>
           <IconStyles src={wallet} />
-          My Wallet
-        </div>
-        <div>
+          <span>My Wallet</span>
+        </ListItemStyle>
+        <ListItemStyle>
           <IconStyles src={tradeView} />
-          Trade View
-        </div>
+          <span>Trade View</span>
+          <IconStyles src={rightArrow} />
+        </ListItemStyle>
       </QuickAccessContainer>
     </React.Fragment>
   );
