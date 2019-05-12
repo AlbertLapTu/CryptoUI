@@ -3,7 +3,11 @@ import styled from 'styled-components';
 import bitcoinLogo from '../../../../Assets/Icons/Crypto/Bitcoin.png';
 import downArrow from '../../../../Assets/point-down-red.svg';
 
+//TODO - CardStyle position is hard coded in. How do we split this between multiple cards?
 const CardStyle = styled.div`
+  position: absolute;
+  top: 100px;
+  left: 250px;
   width: 270px;
   height: 110px;
   border-radius: 12px;
