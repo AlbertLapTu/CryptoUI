@@ -4,10 +4,43 @@ import bitcoinLogo from '../../../../Assets/Icons/Crypto/Bitcoin.png';
 import downArrow from '../../../../Assets/point-down-red.svg';
 
 //TODO - CardStyle position is hard coded in. How do we split this between multiple cards?
-const CardStyle = styled.div`
+const CardStyle1 = styled.div`
   position: absolute;
   top: 100px;
   left: 250px;
+  width: 270px;
+  height: 110px;
+  border-radius: 12px;
+  border: solid 0.7px #dfe5f9;
+  background-color: #ffffff;
+`;
+
+const CardStyle2 = styled.div`
+  position: absolute;
+  top: 100px;
+  left: 540px;
+  width: 270px;
+  height: 110px;
+  border-radius: 12px;
+  border: solid 0.7px #dfe5f9;
+  background-color: #ffffff;
+`;
+
+const CardStyle3 = styled.div`
+  position: absolute;
+  top: 100px;
+  left: 828px;
+  width: 270px;
+  height: 110px;
+  border-radius: 12px;
+  border: solid 0.7px #dfe5f9;
+  background-color: #ffffff;
+`;
+
+const CardStyle4 = styled.div`
+  position: absolute;
+  top: 100px;
+  left: 1115px;
   width: 270px;
   height: 110px;
   border-radius: 12px;
@@ -95,19 +128,60 @@ const CoinInfoContainer = styled.div`
  */
 const Card = () => {
   return (
-    <CardStyle>
-      <CoinInfoContainer>
-        <IconStyle src={bitcoinLogo} />
-        <TickerStyle>BTC</TickerStyle>
-        <CoinNameStyle>Bitcoin</CoinNameStyle>
-        <CurrencyStyle>$3871.21</CurrencyStyle>
-        <DeltaStyle>
-          -4.66%
-          <IconStyle src={downArrow} />
-        </DeltaStyle>
-      </CoinInfoContainer>
-      <LineContainer />
-    </CardStyle>
+    <React.Fragment>
+      <CardStyle1>
+        <CoinInfoContainer>
+          <IconStyle src={bitcoinLogo} />
+          <TickerStyle>BTC</TickerStyle>
+          <CoinNameStyle>Bitcoin</CoinNameStyle>
+          <CurrencyStyle>$3871.21</CurrencyStyle>
+          <DeltaStyle>
+            -4.66%
+            <IconStyle src={downArrow} />
+          </DeltaStyle>
+        </CoinInfoContainer>
+        <LineContainer />
+      </CardStyle1>
+      <CardStyle2>
+        <CoinInfoContainer>
+          <IconStyle src={bitcoinLogo} />
+          <TickerStyle>BTC</TickerStyle>
+          <CoinNameStyle>Bitcoin</CoinNameStyle>
+          <CurrencyStyle>$3871.21</CurrencyStyle>
+          <DeltaStyle>
+            -4.66%
+            <IconStyle src={downArrow} />
+          </DeltaStyle>
+        </CoinInfoContainer>
+        <LineContainer />
+      </CardStyle2>
+      <CardStyle3>
+        <CoinInfoContainer>
+          <IconStyle src={bitcoinLogo} />
+          <TickerStyle>BTC</TickerStyle>
+          <CoinNameStyle>Bitcoin</CoinNameStyle>
+          <CurrencyStyle>$3871.21</CurrencyStyle>
+          <DeltaStyle>
+            -4.66%
+            <IconStyle src={downArrow} />
+          </DeltaStyle>
+        </CoinInfoContainer>
+        <LineContainer />
+      </CardStyle3>
+      <CardStyle4>
+        <CoinInfoContainer>
+          <IconStyle src={bitcoinLogo} />
+          <TickerStyle>BTC</TickerStyle>
+          <CoinNameStyle>Bitcoin</CoinNameStyle>
+          <CurrencyStyle>$3871.21</CurrencyStyle>
+          <DeltaStyle>
+            -4.66%
+            <IconStyle src={downArrow} />
+          </DeltaStyle>
+        </CoinInfoContainer>
+        <LineContainer />
+      </CardStyle4>
+    </React.Fragment>
   );
 };
 
