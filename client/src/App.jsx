@@ -19,8 +19,6 @@ const App = () => {
         <MainSideBar />
         <TopHeader />
         <Card />
-        <Card />
-        <Card />
       </GlobalStyle>
     </React.Fragment>
   );

@@ -26,6 +26,8 @@ const Input = styled.input.attrs({
   border-radius: 15px;
   background-color: #f8f9fb;
   display: block;
+  font-family: Oxygen;
+  background-color: #f8f9fb;
 `;
 
 const ImageTile = styled.div`
