@@ -1,62 +1,38 @@
 import React from 'react';
-import styled from 'styled-components';
 import homeIcon from '../../../../../Assets/fill.svg';
 import exchange from '../../../../../Assets/exchange.svg';
 import wallet from '../../../../../Assets/Icons/Wallet/outline.png';
 import tradeView from '../../../../../Assets/Icons/TradeView/Outline.png';
 import rightArrow from '../../../../../Assets/Icons/Arrows/Right.png';
-
-const QuickAccessContainer = styled.ul`
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  justify-content: flex-start;
-  padding-left: 23px;
-`;
-
-const ListItemStyle = styled.li`
-  list-style: none;
-  padding-top: 5px;
-`;
-
-const QuickAccessTitleStyle = styled.span`
-  display: flex;
-  align-items: center;
-  flex-direction: flex-start;
-  padding: 6px 21px 13px 23px;
-`;
-
-const IconStyles = styled.img`
-  height: 20px;
-  width: 20px;
-  padding-right: 8px;
-`;
+import * as styled from '../styles/QuickAccessStyles.jsx';
 
 //TODO: Fix arrow for trade view
 //      Container doesn't work.
 const QuickAccess = () => {
   return (
     <React.Fragment>
-      <QuickAccessTitleStyle>Quick Access</QuickAccessTitleStyle>
-      <QuickAccessContainer>
-        <ListItemStyle>
-          <IconStyles src={homeIcon} />
+      <styled.QuickAccessTitleStyle>Quick Access</styled.QuickAccessTitleStyle>
+      <styled.QuickAccessContainer>
+        <styled.ListItemStyle>
+          <styled.IconStyles src={homeIcon} />
           <span>Dashboard</span>
-        </ListItemStyle>
-        <ListItemStyle>
-          <IconStyles src={exchange} />
+        </styled.ListItemStyle>
+        <styled.ListItemStyle>
+          <styled.IconStyles src={exchange} />
           <span>Exchange</span>
-        </ListItemStyle>
-        <ListItemStyle>
-          <IconStyles src={wallet} />
-          <span>My Wallet</span>
-        </ListItemStyle>
-        <ListItemStyle>
-          <IconStyles src={tradeView} />
+        </styled.ListItemStyle>
+        <styled.ListItemStyle>
+          <styled.MyWalletContainer>
+            <styled.IconStyles src={wallet} />
+            <span>My Wallet</span>
+            <styled.IconStyles src={rightArrow} />
+          </styled.MyWalletContainer>
+        </styled.ListItemStyle>
+        <styled.ListItemStyle>
+          <styled.IconStyles src={tradeView} />
           <span>Trade View</span>
-          <IconStyles src={rightArrow} />
-        </ListItemStyle>
-      </QuickAccessContainer>
+        </styled.ListItemStyle>
+      </styled.QuickAccessContainer>
     </React.Fragment>
   );
 };

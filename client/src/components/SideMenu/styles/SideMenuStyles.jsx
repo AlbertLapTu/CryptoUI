@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const SideMenuStyle = styled.div`
   background-color: #1f263e;
-  width: 217px;
+  width: 18%;
   height: 1024px;
   font-family: Oxygen;
   color: #fff;

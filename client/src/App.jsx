@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import MainSideBar from './components/SideMenu/sideMenuComponents/MainSideBar.jsx';
 import TopHeader from './components/Header/TopHeader.jsx';
 import Card from './components/CardHolder/Card.jsx';
+import MarketCap from './components/Chart/MarketCap.jsx';
 
 //TODO: Wrap entire app with general global styles to have components fall in line
 const GlobalStyle = styled.div`
@@ -19,6 +20,7 @@ const App = () => {
         <MainSideBar />
         <TopHeader />
         <Card />
+        <MarketCap />
       </GlobalStyle>
     </React.Fragment>
   );
